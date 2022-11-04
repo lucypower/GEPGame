@@ -12,7 +12,7 @@ public class Bullet : MonoBehaviour
         m_RB = GetComponent<Rigidbody2D>();
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         m_RB.AddForce(m_RB.transform.up * m_speed);
         Destroy(gameObject, 5f);
