@@ -10,13 +10,17 @@ public class EnemyAI : MonoBehaviour
     private Vector2 m_roamingPosition;
     private EnemyShooting m_shooting;
     private IEnumerator m_coroutine;
-    private bool m_canAttack = true;
+    private bool m_canAttack;
 
     public float m_speed = 5.0f;
     public Transform m_target;
     public float m_attackDelay;
     public Vector3 offset;
     public float m_range = 10f;
+
+    public GameObject m_prefab;
+    public Transform m_spawnPosition;
+
 
     private AIState m_state;
 
@@ -28,9 +32,12 @@ public class EnemyAI : MonoBehaviour
 
     private void Start()
     {
+        //m_canAttack = false;
+        m_coroutine = ShootingDelay(m_attackDelay);
+        StartCoroutine(m_coroutine);
+
         m_startingPosition = transform.position;
         m_roamingPosition = GetRoamingPosition();
-        m_coroutine = AttackDelay(m_attackDelay);
     }
 
     private void Update()
@@ -45,7 +52,7 @@ public class EnemyAI : MonoBehaviour
 
                 Roaming();
 
-                if(m_canAttack && m_coroutine != null)
+                if(m_canAttack /*&& m_coroutine != null*/)
                 {
                     FindTarget();
 
@@ -85,15 +92,9 @@ public class EnemyAI : MonoBehaviour
     {
         Vector2 randomDirection = new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1f)).normalized;
         return m_startingPosition + randomDirection * Random.Range(-10f, 10f);
-    }    
+    }   
 
-    IEnumerator AttackDelay(float waitTime)
-    {
-        yield return new WaitForSeconds(waitTime);
-        m_canAttack = true;
-    }
-
-    private void FindTarget() // finding target working (?) not moving towards target and shooting
+    private void FindTarget() 
     {
         Debug.Log("Target Searching");
 
@@ -109,11 +110,11 @@ public class EnemyAI : MonoBehaviour
 
                 m_target = target.transform;
             }
-            else
-            {
-                Debug.Log("Target not found");
-                m_target = null;
-            }
+            //else
+            //{
+            //    Debug.Log("Target not found");
+            //    m_target = null;
+            //}
         }
         
         //if (!m_target)
@@ -128,33 +129,43 @@ public class EnemyAI : MonoBehaviour
 
     private void Attack() 
     {
+
         Debug.Log("Attacking");
-
-        m_canAttack = false;
-        StartCoroutine(m_coroutine);
-
-        m_shooting = GetComponent<EnemyShooting>();
-
-        if (m_target == null)
-        {
-            return;
-        }
 
         if (m_target)
         {
             if (transform.position != m_target.transform.position + offset) // problem somewhere in this bit now i think 
             {
-                transform.position = m_target.transform.position + offset;
+                Debug.Log("Moving");
+                transform.position = Vector2.MoveTowards(transform.position, m_target.transform.position + offset, m_speed * Time.deltaTime);
             }
-            else if (transform.position == m_target.transform.position + offset)
+
+            if (transform.position == m_target.transform.position + offset)
             {
                 Debug.Log("Shooting");
 
-                m_shooting.Shooting();
+                Shooting();
+                m_target = null;
             }
         }
+    }
 
-        m_target = null;
+    public void Shooting()
+    {
+        // if not shooting and coroutine is null then instantiate bullet and say enemy shooting and start coroutine
+        if (m_canAttack && m_coroutine != null)
+        {
+            Instantiate(m_prefab, m_spawnPosition.position, m_spawnPosition.rotation);
+            m_canAttack = false;
+            m_coroutine = ShootingDelay(m_attackDelay);
+            StartCoroutine(m_coroutine);
+        }
+    }
+
+    IEnumerator ShootingDelay(float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+        m_canAttack = true;
     }
 
 
