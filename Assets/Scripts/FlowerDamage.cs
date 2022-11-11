@@ -12,13 +12,13 @@ public class FlowerDamage : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Bullet") && m_health == 2f)
+        if (collision.gameObject.CompareTag("EnemyBullet") && m_health == 2f)
         {
             Debug.Log("Collision hit");
             this.gameObject.GetComponent<SpriteRenderer>().sprite = m_flowerOrange;
             m_health--;
         }
-        else if (collision.gameObject.CompareTag("Bullet") && m_health == 1f)
+        else if (collision.gameObject.CompareTag("EnemyBullet") && m_health == 1f)
         {
             this.gameObject.GetComponent<SpriteRenderer>().sprite = m_flowerRed;
             m_health--;

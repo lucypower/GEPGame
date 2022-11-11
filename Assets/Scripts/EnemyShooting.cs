@@ -20,20 +20,20 @@ public class EnemyShooting : MonoBehaviour
     IEnumerator ShootingDelay(float waitTime)
     {
         yield return new WaitForSeconds(waitTime);
-        m_isShooting = false;
+        //m_isShooting = false;
     }
 
     private void Update()
     {
+        m_coroutine = ShootingDelay(m_shootDelay);
+
+        Shooting();
         
     }
 
     public void Shooting()
     {
-        m_coroutine = ShootingDelay(m_shootDelay);
-
         // if not shooting and coroutine is null then instantiate bullet and say enemy shooting and start coroutine
-
         if (!m_isShooting && m_coroutine != null)
         {
             Instantiate(m_prefab, m_spawnPosition.position, m_spawnPosition.rotation);
