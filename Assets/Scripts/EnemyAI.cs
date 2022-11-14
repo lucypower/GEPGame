@@ -91,7 +91,7 @@ public class EnemyAI : MonoBehaviour
     private Vector2 GetRoamingPosition()
     {
         Vector2 randomDirection = new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1f)).normalized;
-        return m_startingPosition + randomDirection * Random.Range(-10f, 10f);
+        return m_startingPosition + randomDirection * Random.Range(-5f, 5f);
     }   
 
     private void FindTarget() 
@@ -166,122 +166,5 @@ public class EnemyAI : MonoBehaviour
     {
         yield return new WaitForSeconds(waitTime);
         m_canAttack = true;
-    }
-
-
-    //    private bool FindTarget()
-    //    {
-    //        GameObject[] possibleTargets = GameObject.FindGameObjectsWithTag("Flower");
-
-    //        float closestDistance = float.MaxValue;
-
-    //        foreach (GameObject possibleTarget in possibleTargets)
-    //        {
-    //            GameObject possibleTargetFlower = possibleTarget.GetComponent<GameObject>();
-
-    //            if (possibleTargetFlower != null)
-    //            {
-    //                float tempDistance = (possibleTarget.transform.position - transform.position).magnitude;
-
-    //                if (tempDistance < closestDistance)
-    //                {
-    //                    closestDistance = tempDistance;
-
-    //                    m_target = possibleTargetFlower;
-    //                }
-    //            }
-
-    //        }
-
-    //        return (m_target != null);
-    //    }
-
-
-
-    //    private GameObject m_target;
-    //    private NavMeshPath m_currentPath;
-    //    private AIState m_state;
-    //    private Vector2 m_movementAxis;
-    //    [SerializeField] float m_range;
-
-    //    private void Start()
-    //    {
-    //        Init();
-    //    }
-
-    //    public void Init()
-    //    {
-    //        transform.rotation = Quaternion.identity;
-
-    //        m_currentPath = new NavMeshPath();
-
-    //        NavMesh.CalculatePath(transform.position, NewWanderPoint(), NavMesh.AllAreas, m_currentPath);
-    //    }
-
-    //    private void FixedUpdate()
-    //    {
-    //        switch (m_state)
-    //        {
-    //            case AIState.WANDER:
-    //                Wander();
-    //                if (FindTarget())
-    //                {
-    //                    m_state = AIState.CHASE;
-    //                }
-    //                break;
-    //            case AIState.CHASE:
-    //                if (!Chase())
-    //                {
-    //                    m_state = AIState.WANDER;
-    //                }
-    //                break;
-    //        }
-
-    //    }
-
-    //    private void Wander()
-    //    {
-    //        if (m_currentPath.corners.Length < 2)
-    //        {
-    //            NavMesh.CalculatePath(transform.position, NewWanderPoint(), NavMesh.AllAreas, m_currentPath);
-    //        }
-
-    //        Vector2 currentDestination = m_currentPath.corners[m_currentPath.corners.Length - 1];
-
-    //        if ((currentDestination - (Vector2)transform.position).magnitude < 0.5f)
-    //        {
-    //            currentDestination = NewWanderPoint();
-    //        }
-
-    //        NavMesh.CalculatePath(transform.position, currentDestination, NavMesh.AllAreas, m_currentPath);
-
-    //        Vector2 toNextPoint = m_currentPath.corners[1] - transform.position;
-
-    //        m_movementAxis = toNextPoint.normalized;
-    //    }
-
-    //    private Vector2 NewWanderPoint()
-    //    {
-    //        return new Vector2(Random.Range(-2f, 2f), Random.Range(-2f, 2f));
-    //    }
-
-
-    //    private bool Chase()
-    //    {
-    //        if (m_target != null)
-    //        {
-    //            Vector2 toTarget = m_target.transform.position - transform.position;
-    //            m_movementAxis = toTarget.normalized;
-
-    //            return true;
-    //        }
-
-    //        return false;
-    //    }
-    //}
-
-    //public enum AIState
-    //{
-    //    WANDER,
-    //    CHASE
+    }    
 };
