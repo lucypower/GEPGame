@@ -125,8 +125,6 @@ public class EnemyAI : MonoBehaviour
         //return true;
     }
 
-
-
     private void Attack() 
     {
 
@@ -166,5 +164,5 @@ public class EnemyAI : MonoBehaviour
     {
         yield return new WaitForSeconds(waitTime);
         m_canAttack = true;
-    }    
+    }
 };
