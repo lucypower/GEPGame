@@ -23,7 +23,7 @@ public class FlowerDamage : MonoBehaviour
             this.gameObject.GetComponent<SpriteRenderer>().sprite = m_flowerRed;
             m_health--;
         }
-        else
+        else if (collision.gameObject.CompareTag("EnemyBullet") && m_health == 0f)
         {
             Destroy(gameObject);
         }
