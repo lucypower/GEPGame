@@ -5,9 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
-  - Bullet
   - EnemyBullet
   - Flower
+  - Wall
+  - Bucket
+  - PlayerBullet
   layers:
   - Default
   - TransparentFX
