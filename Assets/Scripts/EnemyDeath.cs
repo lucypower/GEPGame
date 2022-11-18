@@ -6,7 +6,7 @@ public class EnemyDeath : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Bullet"))
+        if (collision.gameObject.CompareTag("PlayerBullet"))
         {
             Debug.Log("Collision hit");
             Destroy(gameObject);

@@ -8,16 +8,16 @@ public class EnemyAI : MonoBehaviour
 {
     private Vector2 m_startingPosition;
     private Vector2 m_roamingPosition;
-    private EnemyShooting m_shooting;
+    public Vector3 offset;
+    
+    public float m_range = 10f;
+    public float m_speed = 5.0f;
+
     private IEnumerator m_coroutine;
+    public float m_attackDelay;
     private bool m_canAttack;
 
-    public float m_speed = 5.0f;
     public Transform m_target;
-    public float m_attackDelay;
-    public Vector3 offset;
-    public float m_range = 10f;
-
     public GameObject m_prefab;
     public Transform m_spawnPosition;
 
