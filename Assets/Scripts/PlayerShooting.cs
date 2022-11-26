@@ -13,6 +13,9 @@ public class PlayerShooting : MonoBehaviour
     [SerializeField] private float m_currentShots;
     public TMP_Text m_textCounter;
 
+    public AudioSource m_shootingAudio;
+    public AudioSource m_refillingAudio;
+
     private void Start()
     {
         m_currentShots = m_maxShots;
@@ -25,6 +28,7 @@ public class PlayerShooting : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 Instantiate(m_Prefab, m_spawnPosition.position, m_spawnPosition.rotation);
+                m_shootingAudio.Play();
                 m_currentShots--;
             }
         }
@@ -37,6 +41,7 @@ public class PlayerShooting : MonoBehaviour
         if (Input.GetKey(KeyCode.Return) && collision.CompareTag("Bucket"))
         {
             m_currentShots = m_maxShots;
+            m_refillingAudio.Play();
         }
     }
 }
