@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 142412057536218472}
   - component: {fileID: 142412057536218473}
   - component: {fileID: 142412057536218470}
-  - component: {fileID: 142412057536218471}
+  - component: {fileID: -3362549897225576932}
+  - component: {fileID: -5986786349153231794}
   m_Layer: 7
   m_Name: FlowerSpriteSheet_Pink
   m_TagString: Flower
@@ -29,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 142412057536218468}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.5743926, y: -0.4926405, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -76,12 +77,12 @@ SpriteRenderer:
   m_SortingLayerID: -1879263129
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: -382936713, guid: 3dbc3d28168c2b44195860fb5b333133, type: 3}
+  m_Sprite: {fileID: 581867399, guid: f0aa87a1993809c4d8a738756f3147ac, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.32, y: 0.32}
+  m_Size: {x: 0.3, y: 0.24}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -104,14 +105,14 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.32, y: 0.32}
-    newSize: {x: 0.32, y: 0.32}
+    oldSize: {x: 1.8, y: 1.44}
+    newSize: {x: 0.3, y: 0.24}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.32, y: 0.32}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!50 &142412057536218470
 Rigidbody2D:
@@ -134,7 +135,27 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &142412057536218471
+--- !u!95 &-3362549897225576932
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 142412057536218468}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5d83ae21f0e9c0142be7d20d5d3a0a9b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &-5986786349153231794
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -143,9 +164,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 142412057536218468}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1863f32d1193744ab47388945573903, type: 3}
+  m_Script: {fileID: 11500000, guid: b1c6e095adb2ab445bb933fc67b56b51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_flowerPink: {fileID: -382936713, guid: 3dbc3d28168c2b44195860fb5b333133, type: 3}
-  m_flowerOrange: {fileID: 1487865115, guid: 3dbc3d28168c2b44195860fb5b333133, type: 3}
-  m_flowerRed: {fileID: 1106163270, guid: 3dbc3d28168c2b44195860fb5b333133, type: 3}

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3dbc3d28168c2b44195860fb5b333133
+guid: 991cfec567cf08e4f81ca48736538c61
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 2
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -118,13 +118,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: FlowerSpriteSheet_0
+      name: AliensBucket (1)_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 33
-        width: 30
-        height: 24
+        x: 0
+        y: 192
+        width: 192
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,20 +132,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c819624d3a03474c8b9a2a18aa037f0
-      internalID: 308744238
+      spriteID: 99bb47a7f17c99b41b29a4b84512dbde
+      internalID: -1169318125
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FlowerSpriteSheet_1
+      name: AliensBucket (1)_1
       rect:
         serializedVersion: 2
-        x: 33
-        y: 33
-        width: 30
-        height: 24
+        x: 192
+        y: 192
+        width: 192
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,20 +153,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 05a7ef4dce8aa7e42883dec8afd1dac1
-      internalID: -641373940
+      spriteID: 7ec441a7387a2904ebdcff6d97715f4b
+      internalID: 2147298519
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FlowerSpriteSheet_2
+      name: AliensBucket (1)_2
       rect:
         serializedVersion: 2
-        x: 1
-        y: 1
-        width: 30
-        height: 24
+        x: 0
+        y: 0
+        width: 192
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,8 +174,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a3510128d1fe7ed42adb19c73bed8838
-      internalID: -1615468226
+      spriteID: c3f633ec690a8054b9f50739747128a4
+      internalID: -234645134
       vertices: []
       indices: 
       edges: []
@@ -191,9 +191,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      FlowerSpriteSheet_0: 308744238
-      FlowerSpriteSheet_2: -1615468226
-      FlowerSpriteSheet_1: -641373940
+      AliensBucket (1)_0: -1169318125
+      AliensBucket (1)_2: -234645134
+      AliensBucket (1)_1: 2147298519
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 
