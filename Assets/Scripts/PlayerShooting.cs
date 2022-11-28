@@ -16,6 +16,8 @@ public class PlayerShooting : MonoBehaviour
     public AudioSource m_shootingAudio;
     public AudioSource m_refillingAudio;
 
+    public ParticleSystem m_dropletPS;
+
     private void Start()
     {
         m_currentShots = m_maxShots;
@@ -40,8 +42,14 @@ public class PlayerShooting : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Return) && collision.CompareTag("Bucket"))
         {
+            if (m_currentShots != m_maxShots)
+            {
+                m_refillingAudio.Play();
+                m_dropletPS.Play();
+            }
+
             m_currentShots = m_maxShots;
-            m_refillingAudio.Play();
+            
         }
     }
 }
