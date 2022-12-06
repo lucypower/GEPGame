@@ -165,4 +165,18 @@ public class EnemyAI : MonoBehaviour
         yield return new WaitForSeconds(waitTime);
         m_canAttack = true;
     }
+
+    //private void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //    if (collision.CompareTag("Wall"))
+    //    {
+    //        Debug.Log("Wall");
+    //        GetRoamingPosition();
+    //    }
+    //}
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        m_roamingPosition = GetRoamingPosition();
+    }
 };
