@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3714361481070989597}
   - component: {fileID: 3540764694694264069}
   - component: {fileID: 2062818978559242533}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -132,7 +132,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: fc3dad9dc38048546b8d7c75899ea592, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -197,7 +197,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5317913973716271565}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpawnPos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
