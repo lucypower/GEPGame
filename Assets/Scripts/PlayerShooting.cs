@@ -18,6 +18,13 @@ public class PlayerShooting : MonoBehaviour
 
     public ParticleSystem m_dropletPS;
 
+    Animator m_animator;
+
+    private void Awake()
+    {
+        m_animator = GetComponent<Animator>();
+    }
+
     private void Start()
     {
         m_currentShots = m_maxShots;
@@ -46,10 +53,10 @@ public class PlayerShooting : MonoBehaviour
             {
                 m_refillingAudio.Play();
                 m_dropletPS.Play();
+                m_animator.SetTrigger("Reload");
             }
 
-            m_currentShots = m_maxShots;
-            
+            m_currentShots = m_maxShots;            
         }
     }
 }
