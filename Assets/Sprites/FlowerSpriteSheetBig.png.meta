@@ -114,6 +114,18 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -121,12 +133,12 @@ TextureImporter:
       name: FlowerSpriteSheetBig_0
       rect:
         serializedVersion: 2
-        x: 6
-        y: 774
-        width: 180
-        height: 144
+        x: 0
+        y: 768
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -143,11 +155,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 774
-        width: 180
-        height: 144
+        y: 768
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -164,11 +176,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 384
-        y: 774
-        width: 180
-        height: 144
+        y: 768
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -185,11 +197,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 576
-        y: 774
-        width: 180
-        height: 144
+        y: 768
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -205,12 +217,12 @@ TextureImporter:
       name: FlowerSpriteSheetBig_4
       rect:
         serializedVersion: 2
-        x: 774
-        y: 774
-        width: 180
-        height: 144
+        x: 768
+        y: 768
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -226,12 +238,12 @@ TextureImporter:
       name: FlowerSpriteSheetBig_5
       rect:
         serializedVersion: 2
-        x: 12
-        y: 582
-        width: 180
-        height: 144
+        x: 0
+        y: 576
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -247,12 +259,12 @@ TextureImporter:
       name: FlowerSpriteSheetBig_6
       rect:
         serializedVersion: 2
-        x: 204
-        y: 582
-        width: 180
-        height: 144
+        x: 192
+        y: 576
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -268,12 +280,12 @@ TextureImporter:
       name: FlowerSpriteSheetBig_7
       rect:
         serializedVersion: 2
-        x: 396
-        y: 582
-        width: 180
-        height: 144
+        x: 384
+        y: 576
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -289,12 +301,12 @@ TextureImporter:
       name: FlowerSpriteSheetBig_8
       rect:
         serializedVersion: 2
-        x: 582
-        y: 582
-        width: 180
-        height: 144
+        x: 576
+        y: 576
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -311,11 +323,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 768
-        y: 582
-        width: 180
-        height: 144
+        y: 576
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -332,11 +344,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 390
-        width: 180
-        height: 144
+        y: 384
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -353,11 +365,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 390
-        width: 180
-        height: 144
+        y: 384
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -373,12 +385,12 @@ TextureImporter:
       name: FlowerSpriteSheetBig_12
       rect:
         serializedVersion: 2
-        x: 390
-        y: 390
-        width: 180
-        height: 144
+        x: 384
+        y: 384
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -394,12 +406,12 @@ TextureImporter:
       name: FlowerSpriteSheetBig_13
       rect:
         serializedVersion: 2
-        x: 588
-        y: 390
-        width: 180
-        height: 144
+        x: 576
+        y: 384
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -415,12 +427,12 @@ TextureImporter:
       name: FlowerSpriteSheetBig_14
       rect:
         serializedVersion: 2
-        x: 780
-        y: 390
-        width: 180
-        height: 144
+        x: 768
+        y: 384
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -436,12 +448,12 @@ TextureImporter:
       name: FlowerSpriteSheetBig_15
       rect:
         serializedVersion: 2
-        x: 12
-        y: 198
-        width: 180
-        height: 144
+        x: 0
+        y: 192
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -457,12 +469,12 @@ TextureImporter:
       name: FlowerSpriteSheetBig_16
       rect:
         serializedVersion: 2
-        x: 198
-        y: 198
-        width: 180
-        height: 144
+        x: 192
+        y: 192
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -479,11 +491,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 384
-        y: 198
-        width: 180
-        height: 144
+        y: 192
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -500,11 +512,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 576
-        y: 198
-        width: 180
-        height: 144
+        y: 192
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -521,11 +533,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 768
-        y: 198
-        width: 180
-        height: 144
+        y: 192
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -541,12 +553,12 @@ TextureImporter:
       name: FlowerSpriteSheetBig_20
       rect:
         serializedVersion: 2
-        x: 6
-        y: 6
-        width: 180
-        height: 144
+        x: 0
+        y: 0
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -562,12 +574,12 @@ TextureImporter:
       name: FlowerSpriteSheetBig_21
       rect:
         serializedVersion: 2
-        x: 204
-        y: 6
-        width: 180
-        height: 144
+        x: 192
+        y: 0
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -583,12 +595,12 @@ TextureImporter:
       name: FlowerSpriteSheetBig_22
       rect:
         serializedVersion: 2
-        x: 396
-        y: 6
-        width: 180
-        height: 144
+        x: 384
+        y: 0
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -604,12 +616,12 @@ TextureImporter:
       name: FlowerSpriteSheetBig_23
       rect:
         serializedVersion: 2
-        x: 588
-        y: 6
-        width: 180
-        height: 144
+        x: 576
+        y: 0
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
